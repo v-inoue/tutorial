@@ -14,7 +14,7 @@ type TodoItemProps = {
     onDelete: (id: number) => void;
 };
 
-function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
+function TodoItem() {
     return (
         <HStack
             p={3}
