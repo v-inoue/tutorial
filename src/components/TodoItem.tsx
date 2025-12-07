@@ -26,6 +26,8 @@ function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
                 checked={todo.completed}
                 onCheckedChange={() => onToggle(todo.id)}
             >
+                <Checkbox.HiddenInput />
+                <Checkbox.Control />
                 <Checkbox.Label>
                     <Text
                         textDecoration={
