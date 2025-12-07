@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+# React × Chakra UI チュートリアル
+このリポジトリは、**React + Chakra UI を使ったフロントエンド開発の基礎**を学ぶためのプロジェクトです。  
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  1. このリポジトリをフォークする
 
-Currently, two official plugins are available:
+まず、このリポジトリをご自身の GitHub アカウントに **Fork（フォーク）** してください。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. 画面右上の **「Fork」ボタン** をクリック
+2. 自分のアカウントを選択
+3. フォーク完了 
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  2. フォークしたリポジトリをクローンする
 
-## Expanding the ESLint configuration
+フォークした自分のリポジトリを、ローカル（自分のPC）にダウンロードします。
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/【あなたのユーザー名】/【リポジトリ名】.git
 ```
+その後、フォルダに移動します。
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 3. Node.js が入っているか確認
+```bash
+node -v
+npm -v
 ```
+バージョンが表示されればOKです。
+もし入っていない場合は、インストールしてください。
+
+## 4. 依存関係をインストール
+```bash
+npm install
+```
+## 5. 開発サーバーを起動
+次のコマンドでアプリを起動します。
+```bash
+npm run dev
+```
+起動後、ターミナルに次のようなURLが表示されます。
+
+```
+http://localhost:5173
+```
+このURLをブラウザで開くと、サイトが表示されます。
+
+lecture_Texts/Assignment0.md
+に進んでください。
