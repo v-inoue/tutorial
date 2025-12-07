@@ -1,4 +1,4 @@
-# Assignment1解説
+# Assignment0解説
 
 このページは、**Reactの基本機能**と**Chakra UIのレイアウト**の基礎を学ぶためのサンプルページです。
 
