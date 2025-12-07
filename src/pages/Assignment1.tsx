@@ -74,12 +74,7 @@ function Assignment1() {
                 )}
 
                 {todos.map((todo) => (
-                    <TodoItem
-                        key={todo.id}
-                        todo={todo}
-                        onToggle={toggleTodo}
-                        onDelete={deleteTodo}
-                    />
+                    <Text >ここをTodoItemに置き換える</Text>
                 ))}
             </VStack>
 

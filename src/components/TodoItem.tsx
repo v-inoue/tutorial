@@ -23,27 +23,17 @@ function TodoItem({ todo, onToggle, onDelete }: TodoItemProps) {
             justify="space-between"
         >
             <Checkbox.Root
-                checked={todo.completed}
-                onCheckedChange={() => onToggle(todo.id)}
+            // checked=
+            // onCheckedChange=
             >
                 <Checkbox.Label>
                     <Text
-                        textDecoration={
-                            todo.completed ? "line-through" : "none"
-                        }
+                    // textDecoration=　三項演算子で完了済みなら取り消し線
                     >
-                        {todo.text}
+                        {/* ここにtodoを表示 */}
                     </Text>
                 </Checkbox.Label>
             </Checkbox.Root>
-
-            <Button
-                size="sm"
-                colorScheme="red"
-                onClick={() => onDelete(todo.id)}
-            >
-                削除
-            </Button>
         </HStack>
     );
 }

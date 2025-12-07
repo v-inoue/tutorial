@@ -16,7 +16,7 @@ function Home() {
 
     //  回数をリセットする関数
     const reset = () => {
-        setCount(0);
+
     };
 
     // 課題ページへ遷移する関数
@@ -50,15 +50,13 @@ function Home() {
                     <Button onClick={increment}>
                         +1
                     </Button>
-                    <Button variant="surface" colorPalette="red" onClick={reset}>
+                    <Button variant="surface" colorPalette="red">
                         リセット <RiResetRightLine />
                     </Button>
                 </HStack>
                 <Text fontSize="xl">カウント：{count}</Text>
             </VStack>
-            <Button colorScheme="teal" size="xl" variant="outline" colorPalette="blue" onClick={goToAssignment1Page}>
-                次のページへ <MdNextPlan />
-            </Button>
+
         </VStack>
     );
 }

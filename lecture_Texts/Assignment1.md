@@ -88,4 +88,5 @@ function TodoInput({ text, setText, onAdd }: TodoInputProps) {
 このように、TodoInputでは、画面の表示のみを担当しており、実際のデータ管理はすべて親コンポーネントに任せています。そのため、引数で親コンポーネントの変数とそのSet関数を受け取り、利用することで親コンポーネントの変数を更新しています。
 
 >### ＊Task　Todo Itemの実装
->TodoInputを参考に、タスクの表示と削除を行うTodoItemを完成させてみよう
+>TodoInputを参考に、以下のようなタスクの表示と削除を行うTodoItemを完成させてみよう
+>![](Explanatory_images/image1_1.png)
